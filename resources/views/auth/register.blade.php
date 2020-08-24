@@ -1,4 +1,6 @@
 @extends('layouts.form')
+@section('title','Registro')
+@section('subtitle','Ingresa tus datos para registrarte')
 
 @section('content')
 <!-- Table -->
@@ -23,10 +25,6 @@
                 @if ($errors->any())
                     <div class="alert alert-danger" role="alert">
                         {{ $errors->first() }}
-                    </div>
-                @else
-                    <div class="text-center text-muted mb-4">
-                    <small>Ingresa tus datos para registrarte</small>
                     </div>
                 @endif
 

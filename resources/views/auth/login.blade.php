@@ -1,5 +1,6 @@
 @extends('layouts.form')
-
+@section('title','Inicio de Sesión')
+@section('subtitle','Ingresa tus datos para iniciar sesión')
 @section('content')
 
 <div class="row justify-content-center">
@@ -24,10 +25,6 @@
                 @if ($errors->any())
                     <div class="alert alert-danger" role="alert">
                         {{ $errors->first() }}
-                    </div>
-                @else
-                    <div class="text-center text-muted mb-4">
-                    <small>Ingresa tus datos para iniciar sesión</small>
                     </div>
                 @endif
                 
